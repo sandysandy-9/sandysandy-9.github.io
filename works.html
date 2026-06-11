@@ -180,10 +180,10 @@
 </header>
 <!-- Filter System -->
 <div class="flex flex-wrap justify-center gap-4 mb-16" id="filter-container">
-<button class="px-8 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all filter-btn active-filter" onclick="filterProjects('All')">All</button>
-<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('AI')">AI</button>
-<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('Web')">Web</button>
-<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('ML')">ML</button>
+<button class="px-8 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all filter-btn active-filter" onclick="filterProjects('All')" data-filter="all" onclick="filterProjects('all',this)">All</button>
+<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('AI')" data-filter="AI"  onclick="filterProjects('AI',this)">AI</button>
+<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('Web')" data-filter="Web" onclick="filterProjects('Web',this)">Web</button>
+<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('ML')" data-filter="ML"  onclick="filterProjects('ML',this)">ML</button>
 </div>
 <!-- Project Grid -->
 <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-gutter">
@@ -410,4 +410,30 @@
             });
         });
     </script>
+<script>
+function filterProjects(category, btn) {
+  // Update active button style
+  document.querySelectorAll('[data-filter]').forEach(b => {
+    b.style.opacity = '0.5'; b.style.fontWeight = 'normal';
+  });
+  btn.style.opacity = '1'; btn.style.fontWeight = 'bold';
+  // Show/hide project cards
+  document.querySelectorAll('article[data-category]').forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.style.display = ''; card.style.opacity = '1';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var menuBtn = document.querySelector('button[aria-label="menu"], button:has(> .material-symbols-outlined)');
+  if(menuBtn) { menuBtn.addEventListener('click', function() {
+    var nav = document.querySelector('nav .hidden.md\\:flex, .mobile-menu');
+    if(nav) nav.classList.toggle('hidden');
+  }); }
+});
+</script>
 </body></html>

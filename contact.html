@@ -230,10 +230,7 @@
 <label class="font-label-md text-label-md text-on-surface-variant px-1">Message</label>
 <textarea class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-primary transition-all rounded-lg p-4 text-on-surface focus:ring-0 resize-none" placeholder="Tell me about your project..." rows="5"></textarea>
 </div>
-<button class="gradient-button w-full py-4 rounded-lg text-white font-headline-md text-label-md flex items-center justify-center gap-2 group" type="submit">
-                            Send Message
-                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
-</button>
+<button type="submit" class="gradient-button w-full py-4 rounded-lg text-white font-headline-md text-label-md flex items-center justify-center gap-2 group" type="submit" onclick="this.innerText='Sent! ✓'; this.style.background='#22c55e'; setTimeout(()=>{this.innerHTML='Send Message <span class=material-symbols-outlined>send</span>'; this.style.background='';},3000); return false;"> Send Message <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span></button>
 </form>
 </div>
 </div>

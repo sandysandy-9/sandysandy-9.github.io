@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Works | Sandeep.dev</title>
+    <meta property="og:title" content="Works | Sandeep.dev">
+    <meta property="og:description" content="Portfolio projects by Sandeep Parise - Marrow-Find AI leukaemia detection, Cloak Mail phishing detection, Emotion Detection, and more. Python, Flask, React, ML.">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Portfolio projects by Sandeep Parise - Marrow-Find AI leukaemia detection, Cloak Mail phishing detection, Emotion Detection, and more. Python, Flask, React, ML.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700;800&family=JetBrains+Mono&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c4c0ff",
+                        "surface-container": "#1f1f25",
+                        "surface": "#131318",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "inverse-surface": "#e4e1e9",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-low": "#1b1b20",
+                        "secondary": "#a2e7ff",
+                        "on-error": "#690005",
+                        "inverse-primary": "#4f44e2",
+                        "surface-bright": "#39383e",
+                        "surface-dim": "#131318",
+                        "primary": "#c4c0ff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary": "#2f3131",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-container-high": "#2a292f",
+                        "inverse-on-surface": "#303036",
+                        "secondary-fixed-dim": "#3cd7ff",
+                        "outline": "#918fa1",
+                        "on-secondary-container": "#005669",
+                        "on-primary": "#2000a4",
+                        "surface-variant": "#35343a",
+                        "surface-container-lowest": "#0e0e13",
+                        "on-background": "#e4e1e9",
+                        "surface-tint": "#c4c0ff",
+                        "surface-container-highest": "#35343a",
+                        "background": "#131318",
+                        "on-surface": "#e4e1e9",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#282a2a",
+                        "tertiary": "#c6c6c7",
+                        "primary-fixed": "#e3dfff",
+                        "on-primary-fixed-variant": "#3622ca",
+                        "on-secondary-fixed": "#001f27",
+                        "secondary-fixed": "#b4ebff",
+                        "secondary-container": "#00d2fd",
+                        "tertiary-container": "#909191",
+                        "on-secondary": "#003642",
+                        "on-primary-container": "#1b0091",
+                        "on-secondary-fixed-variant": "#004e5f",
+                        "primary-container": "#8781ff",
+                        "on-primary-fixed": "#100069",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#c7c4d8",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "outline-variant": "#464555"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Sora"],
+                        "display-lg-mobile": ["Sora"],
+                        "body-lg": ["Inter"],
+                        "mono-label": ["JetBrains Mono"],
+                        "headline-md": ["Sora"],
+                        "headline-lg": ["Sora"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "mono-label": ["13px", {"lineHeight": "1", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(31, 31, 37, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            background: rgba(31, 31, 37, 0.6);
+            border-color: #c4c0ff;
+            box-shadow: 0 0 30px -10px rgba(196, 192, 255, 0.3);
+            transform: translateY(-4px);
+        }
+        .dot-grid {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(196, 192, 255, 0.5);
+        }
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, #c4c0ff, #a2e7ff);
+            z-index: -1;
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .glass-card:hover.gradient-border::after {
+            opacity: 0.5;
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary/30 dot-grid min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 nav-blur border-b border-white/10 shadow-xl">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-16">
+<div class="font-display-lg text-body-lg font-black text-primary tracking-tighter">Sandeep.dev</div>
+<div class="hidden md:flex items-center gap-8">
+<a href="index.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md">Home</a>
+<a href="about.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md">About</a>
+<a href="works.html" class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md">Works</a>
+<a href="skills.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md">Skills</a>
+<a href="achievements.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md">Achievements</a>
+<a href="resume.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md">Resume</a>
+<a href="contact.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md">Contact</a>
+</div>
+<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all" style="text-decoration:none;display:inline-block;">
+                Contact Me
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<!-- Hero Header -->
+<header class="text-center mb-16 space-y-4">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tighter glow-text animate-pulse-slow">
+                Works
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Crafting impactful AI and web solutions that bridge the gap between complex data and intuitive human experiences.
+            </p>
+</header>
+<!-- Filter System -->
+<div class="flex flex-wrap justify-center gap-4 mb-16" id="filter-container">
+<button class="px-8 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all filter-btn active-filter" onclick="filterProjects('All')">All</button>
+<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('AI')">AI</button>
+<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('Web')">Web</button>
+<button class="px-8 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all filter-btn" onclick="filterProjects('ML')">ML</button>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-gutter">
+<!-- PROJECT 1: Marrow-Find (Featured) -->
+<article class="md:col-span-6 lg:col-span-12 glass-card rounded-xl overflow-hidden flex flex-col lg:flex-row group border-primary/20" data-category="AI">
+<div class="lg:w-1/2 h-64 lg:h-auto relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed cinematic shot of a futuristic medical laboratory focusing on a high-tech microscope screen displaying complex bone marrow cells. The room is bathed in deep indigo and neon purple lighting, emphasizing a sophisticated AI-driven medical research environment. A subtle digital heatmap overlay glows on the cellular images, highlighting specific nuclei with high precision. The atmosphere is clinical yet technologically advanced, utilizing a dark-mode aesthetic with vibrant bioluminescent accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6uBRKTUA75hfhtalBfU0Ox8gFPvnZjogMZ4ayn1bVzpfMBLPvcaUgz5rtZ28OnRUELFNih4SFvQhEoIv6QiYrzCIkY49-6rHiZAcj7dKuUSRdDzmyd9aVUHRPjCMkcuBnjElalpaUE7Yu7sMrJoZSUJvJCesRxf9T6pjuHmBU_4tc3P607S6FWL0wFDLRI-waSfYc7AK430ZJYSMnsXZlqbwXRBnKQ8Q4lgx12iCXeq51vIcPStlyoST64ehWrNhWzDoHP-T9PDiW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60 lg:hidden"></div>
+</div>
+<div class="lg:w-1/2 p-8 md:p-12 space-y-6">
+<div class="space-y-2">
+<span class="font-mono-label text-primary uppercase tracking-widest">AI • Healthcare • Capstone</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Marrow-Find</h2>
+<h3 class="text-primary-fixed-dim font-body-lg text-body-lg italic">AI-Powered Leukaemia Detection System</h3>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                        End-to-end automated ALL leukaemia detection from bone marrow microscopy images. Leveraging advanced deep learning to provide rapid, accurate screening for medical professionals.
+                    </p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> cGAN Augmentation</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Grad-CAM Heatmaps</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Automated PDF Reports</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> ResNet50 Architecture</li>
+</ul>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-variant text-primary rounded-full text-xs font-bold border border-white/5">Python</span>
+<span class="px-3 py-1 bg-surface-variant text-primary rounded-full text-xs font-bold border border-white/5">ResNet50</span>
+<span class="px-3 py-1 bg-surface-variant text-primary rounded-full text-xs font-bold border border-white/5">Flask</span>
+<span class="px-3 py-1 bg-surface-variant text-primary rounded-full text-xs font-bold border border-white/5">React</span>
+<span class="px-3 py-1 bg-surface-variant text-primary rounded-full text-xs font-bold border border-white/5">PyTorch</span>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95" href="https://github.com/sandysandy-9/MARROW-_CLUES_IN_DETECTION_OF_LEUKEMIA" target="_blank">
+<span class="material-symbols-outlined">code</span> View GitHub
+                        </a>
+<a class="inline-flex items-center gap-2 px-8 py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary/10 transition-all active:scale-95 ml-3" href="marrow-find.html">
+<span class="material-symbols-outlined">open_in_new</span> View Case Study
+</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 2: Cloak Mail -->
+<article class="md:col-span-3 lg:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col group" data-category="AI Web">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A futuristic digital interface of a secure email client in a dark mode aesthetic. Glowing cyan lines trace connections between encrypted message packets floating in a holographic space. The scene features deep obsidian backgrounds with neon blue highlights, evoking a sense of privacy, encryption, and high-tech defense against cyber threats. Abstract data streams flow through the background like rain in a digital city." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2QlmSDKcmBLc4lx_aLLiGGkmRjqgtFgEc9CERX4BIxUZJPcLkt0aLll-IAA5qPgNav6vxBBLGMzKf_7T7tyUrxok_xQkRJ-Z2LoFQw5oYcEtp5JzIZSrp8mbG_bHcuI4macUIc7hKEOWGsJQQCytGiqxk-ycxodjkr_wL1vlM8g4BDGw7k698qrj-_oihodittnbAs1CMylw8sDhlVqZtNgwrstpEknhi6CrcSSEff81zP1uIogcxtO54oTfglIP4RmGDfPV-lcu_"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Cloak Mail</h3>
+<p class="text-on-surface-variant text-body-md mb-6 flex-grow">AI-powered disposable email service with built-in phishing detection and privacy masking.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Next.js</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">TypeScript</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Genkit AI</span>
+</div>
+<a class="text-secondary hover:text-primary-fixed-dim inline-flex items-center gap-1 font-bold group-hover:gap-2 transition-all" href="https://github.com/sandysandy-9">
+                        GitHub Repo <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 3: Emotion Detection -->
+<article class="md:col-span-3 lg:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col group" data-category="AI ML">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A stylized digital representation of human emotion mapping through artificial intelligence. Glowing wireframe faces in various expressions—joy, sadness, anger—are interconnected by pulsing neural networks. The color palette consists of deep violets and electric magentas against a pitch-black void. Each node in the network flashes as it classifies a mood, representing high-speed real-time facial recognition and sentiment analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApT0tzpZ6Q0rnv_lXMbR-slMkVIMQRMkGITyKBDN0xKzi1phCMrfe3v2rLMIHqB69r_AFfnnJgeK0eVNTJJXWiHidyqoXdx08v2CI1kBMyNXk38ptwcZhDukmf7wf1ZBf8TV0UVv2IDidS44tQ9ODTCodQ41b81QzB3gsfVccW7QkvYzSrQWTD-7F4TeBWTLj0uE9fCQqNCqvw7Salh0gisYyJZJL4-xq7SXfiBJ0ED2C3q2fGFRQVqFuPqopL_JvxDCOOojlKLt98"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Emotion App</h3>
+<span class="bg-primary/20 text-primary px-2 py-1 rounded text-[10px] font-black tracking-tighter uppercase">88% Accuracy</span>
+</div>
+<p class="text-on-surface-variant text-body-md mb-6 flex-grow">Real-time facial emotion classification using state-of-the-art computer vision and Transformers.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Python</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Hugging Face</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Streamlit</span>
+</div>
+<a class="text-secondary hover:text-primary-fixed-dim inline-flex items-center gap-1 font-bold group-hover:gap-2 transition-all" href="https://github.com/sandysandy-9/emotion-classifier-app">
+                        GitHub Repo <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 4: Student Predictor -->
+<article class="md:col-span-3 lg:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col group" data-category="ML">
+<div class="p-6 flex-grow flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Student Predictor</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Predictive analytics platform for forecasting academic outcomes based on demographic and behavioral data.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Python</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">ML</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Pandas</span>
+</div>
+</div>
+<div class="mt-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="https://github.com/sandysandy-9/Student-Performance-Predictor">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 5: ArogyaSync -->
+<article class="md:col-span-3 lg:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col group" data-category="Web">
+<div class="p-6 flex-grow flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary">medical_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">ArogyaSync</h3>
+<p class="text-on-surface-variant text-body-md mb-6">A synchronized healthcare ecosystem for real-time patient monitoring and data sharing.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">TypeScript</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Node.js</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">MongoDB</span>
+</div>
+</div>
+<div class="mt-6">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="https://github.com/sandysandy-9/ArogyaSync">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 6: Human Validator Form -->
+<article class="md:col-span-3 lg:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col group" data-category="Web">
+<div class="p-6 flex-grow flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 bg-tertiary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary">how_to_reg</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Human Validator</h3>
+<p class="text-on-surface-variant text-body-md mb-6">An intelligent form validation system with bot-detection and accessibility features.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">HTML</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">JavaScript</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">CSS3</span>
+</div>
+</div>
+<div class="mt-6">
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="https://github.com/sandysandy-9/Human-validator-form">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 7: AOI Creation Tool -->
+<article class="md:col-span-3 lg:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col group" data-category="Web">
+<div class="p-6 flex-grow flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">crop_free</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">AOI Tool</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Area of Interest creation tool for geospatial data visualization and mapping workflows.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">HTML</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">JS</span>
+<span class="px-3 py-1 bg-surface-variant text-secondary rounded-full text-xs font-bold">Canvas API</span>
+</div>
+</div>
+<div class="mt-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="https://github.com/sandysandy-9/AOI-Creation-Tool">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-unit">
+<div class="font-display-lg text-body-md font-bold text-on-surface">Sandeep.dev</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">
+                © 2024 Sandeep. All rights reserved. Crafted with precision.
+            </p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="https://github.com/sandysandy-9" target="_blank">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="https://linkedin.com/in/parisesandeep" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="mailto:parisesandeep27@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('article[data-category]');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update buttons
+            buttons.forEach(btn => {
+                if(btn.innerText === category) {
+                    btn.classList.add('bg-primary', 'text-on-primary');
+                    btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                } else {
+                    btn.classList.remove('bg-primary', 'text-on-primary');
+                    btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+                }
+            });
+
+            // Filter logic
+            projects.forEach(project => {
+                const projectCategories = project.getAttribute('data-category');
+                if (category === 'All' || projectCategories.includes(category)) {
+                    project.style.display = 'flex';
+                    project.style.opacity = '0';
+                    setTimeout(() => {
+                        project.style.opacity = '1';
+                        project.style.transition = 'opacity 0.4s ease';
+                    }, 10);
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+
+        // Add smooth scrolling for interaction states
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

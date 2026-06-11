@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skills &amp; Tech Stack | Sandeep</title>
+    <meta property="og:title" content="Skills &amp; Tech Stack | Sandeep">
+    <meta property="og:description" content="Skills and Tech Stack of Sandeep Parise - Python, Flask, React, Node.js, SQL, Machine Learning, Streamlit, TypeScript, Git, REST APIs and more.">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Skills and Tech Stack of Sandeep Parise - Python, Flask, React, Node.js, SQL, Machine Learning, Streamlit, TypeScript, Git, REST APIs and more.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;family=JetBrains+Mono&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Sora:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#e4e1e9",
+                      "surface-variant": "#35343a",
+                      "surface-bright": "#39383e",
+                      "surface-container-high": "#2a292f",
+                      "surface-container": "#1f1f25",
+                      "on-surface-variant": "#c7c4d8",
+                      "on-error-container": "#ffdad6",
+                      "on-primary": "#2000a4",
+                      "on-error": "#690005",
+                      "on-secondary-fixed-variant": "#004e5f",
+                      "surface-container-lowest": "#0e0e13",
+                      "inverse-primary": "#4f44e2",
+                      "surface": "#131318",
+                      "on-tertiary-container": "#282a2a",
+                      "tertiary-fixed": "#e2e2e2",
+                      "primary": "#c4c0ff",
+                      "on-primary-container": "#1b0091",
+                      "primary-fixed-dim": "#c4c0ff",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-surface": "#e4e1e9",
+                      "surface-tint": "#c4c0ff",
+                      "surface-container-low": "#1b1b20",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-dim": "#131318",
+                      "surface-container-highest": "#35343a",
+                      "secondary-fixed-dim": "#3cd7ff",
+                      "secondary-fixed": "#b4ebff",
+                      "error-container": "#93000a",
+                      "primary-fixed": "#e3dfff",
+                      "tertiary-container": "#909191",
+                      "on-tertiary": "#2f3131",
+                      "on-primary-fixed": "#100069",
+                      "inverse-on-surface": "#303036",
+                      "on-secondary": "#003642",
+                      "secondary": "#a2e7ff",
+                      "outline-variant": "#464555",
+                      "secondary-container": "#00d2fd",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "primary-container": "#8781ff",
+                      "on-secondary-container": "#005669",
+                      "outline": "#918fa1",
+                      "on-secondary-fixed": "#001f27",
+                      "tertiary": "#c6c6c7",
+                      "error": "#ffb4ab",
+                      "on-background": "#e4e1e9",
+                      "on-primary-fixed-variant": "#3622ca",
+                      "background": "#131318"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "unit": "8px",
+                      "section-gap": "120px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "mono-label": ["JetBrains Mono"],
+                      "display-lg": ["Sora"],
+                      "display-lg-mobile": ["Sora"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Sora"],
+                      "headline-lg": ["Sora"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "mono-label": ["13px", {"lineHeight": "1", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131318;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #c4c0ff;
+            transform: translateY(-4px);
+            box-shadow: 0 0 30px rgba(196, 192, 255, 0.15);
+        }
+        .progress-fill {
+            transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+            width: 0%;
+        }
+        .glow-accent-purple {
+            box-shadow: 0 0 20px rgba(135, 129, 255, 0.3);
+        }
+        .glow-accent-cyan {
+            box-shadow: 0 0 20px rgba(60, 215, 255, 0.3);
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="text-on-surface overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tighter">DevPortfolio</div>
+<div class="hidden md:flex items-center gap-8">
+<a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md">Home</a>
+<a href="about.html" class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md">About</a>
+<a href="works.html" class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md">Works</a>
+<a href="skills.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md">Skills</a>
+<a href="achievements.html" class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md">Achievements</a>
+<a href="resume.html" class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md">Resume</a>
+<a href="contact.html" class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md">Contact</a>
+</div>
+<a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:backdrop-brightness-125 hover:scale-105 active:scale-95 transition-all" style="text-decoration:none;display:inline-block;">
+                Hire Me
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-48 pb-24 px-gutter relative overflow-hidden">
+
+<div class="max-w-container-max mx-auto relative z-10 text-center">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+                Skills &amp; <span class="text-primary">Tech Stack</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Tools, technologies and disciplines I work with to build high-performance digital experiences.
+            </p>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-gutter pb-section-gap">
+<!-- Main Skills Bento Grid -->
+<div class="skill-grid">
+<!-- Category 1: Languages & Core -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">code</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Languages &amp; Core</h3>
+</div>
+<div class="space-y-6">
+<div class="skill-item" data-level="95">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Python</span>
+<span class="font-mono-label text-mono-label text-primary">Expert (95%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-primary to-secondary glow-accent-purple" style="width: 95%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="85">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">SQL/MySQL</span>
+<span class="font-mono-label text-mono-label text-primary">Advanced (85%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-primary to-secondary" style="width: 85%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="70">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">JavaScript</span>
+<span class="font-mono-label text-mono-label text-primary">Intermediate (70%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-primary to-secondary" style="width: 70%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="70">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">TypeScript</span>
+<span class="font-mono-label text-mono-label text-primary">Intermediate (70%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-primary to-secondary" style="width: 70%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="95">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">HTML/CSS</span>
+<span class="font-mono-label text-mono-label text-primary">Expert (95%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-primary to-secondary" style="width: 95%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Category 2: Frameworks & Libraries -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">library_books</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Frameworks &amp; Libraries</h3>
+</div>
+<div class="space-y-4">
+<div class="skill-item" data-level="90">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Flask</span>
+<span class="font-mono-label text-mono-label text-secondary">Expert (90%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-secondary to-secondary-container glow-accent-cyan" style="width: 90%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="85">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">React.js</span>
+<span class="font-mono-label text-mono-label text-secondary">Advanced (85%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-secondary to-secondary-container" style="width: 85%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="70">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Node.js</span>
+<span class="font-mono-label text-mono-label text-secondary">Intermediate (70%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-secondary to-secondary-container" style="width: 70%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="50">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Angular 2.0</span>
+<span class="font-mono-label text-mono-label text-secondary">Familiar (50%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-secondary to-secondary-container" style="width: 50%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="90">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Streamlit</span>
+<span class="font-mono-label text-mono-label text-secondary">Expert (90%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-secondary to-secondary-container" style="width: 90%;"></div>
+</div>
+</div>
+<div class="skill-item" data-level="90">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Pandas/NumPy</span>
+<span class="font-mono-label text-mono-label text-secondary">Expert (90%)</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="progress-fill h-full bg-gradient-to-r from-secondary to-secondary-container" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Category 3: AI / ML -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-6 md:col-span-1 lg:col-span-1">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container text-3xl">psychology</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">AI / ML</h3>
+</div>
+<div class="space-y-4">
+<div class="skill-item" data-level="85">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Machine Learning</span>
+</div>
+<div class="flex gap-1 h-3">
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+</div>
+<p class="font-mono-label text-mono-label mt-1 text-on-surface-variant">Advanced (85%)</p>
+</div>
+<div class="skill-item" data-level="75">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">ResNet50 / CNNs</span>
+</div>
+<div class="flex gap-1 h-3">
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+</div>
+<p class="font-mono-label text-mono-label mt-1 text-on-surface-variant">Intermediate (75%)</p>
+</div>
+<div class="skill-item" data-level="85">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Hugging Face</span>
+</div>
+<div class="flex gap-1 h-3">
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+</div>
+<p class="font-mono-label text-mono-label mt-1 text-on-surface-variant">Advanced (85%)</p>
+</div>
+<div class="skill-item" data-level="70">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">cGAN / Grad-CAM</span>
+</div>
+<div class="flex gap-1 h-3">
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+</div>
+<p class="font-mono-label text-mono-label mt-1 text-on-surface-variant">Intermediate (70%)</p>
+</div>
+<div class="skill-item" data-level="50">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md">Genkit AI</span>
+</div>
+<div class="flex gap-1 h-3">
+<div class="flex-1 bg-primary-container rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+<div class="flex-1 bg-primary-container/20 rounded-sm"></div>
+</div>
+<p class="font-mono-label text-mono-label mt-1 text-on-surface-variant">Familiar (50%)</p>
+</div>
+</div>
+</div>
+<!-- Category 4: Tools & Platforms -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-3xl">build</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tools &amp; Platforms</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<div class="px-4 py-2 rounded-full glass-card border-white/5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">hub</span>
+<span class="font-label-md text-label-md">Git/GitHub (95%)</span>
+</div>
+<div class="px-4 py-2 rounded-full glass-card border-white/5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">api</span>
+<span class="font-label-md text-label-md">REST APIs (90%)</span>
+</div>
+<div class="px-4 py-2 rounded-full glass-card border-white/5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">bar_chart</span>
+<span class="font-label-md text-label-md">Power BI (40%)</span>
+</div>
+<div class="px-4 py-2 rounded-full glass-card border-white/5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">table_view</span>
+<span class="font-label-md text-label-md">Excel (65%)</span>
+</div>
+<div class="px-4 py-2 rounded-full glass-card border-white/5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">rocket_launch</span>
+<span class="font-label-md text-label-md">Next.js (70%)</span>
+</div>
+</div>
+</div>
+<!-- Soft Skills -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-6 md:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Soft Skills</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="p-4 rounded-lg bg-surface-container/50 border border-white/5 flex flex-col items-center text-center gap-2 group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">search</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Attention to Detail</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container/50 border border-white/5 flex flex-col items-center text-center gap-2 group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">chat</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Communication</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container/50 border border-white/5 flex flex-col items-center text-center gap-2 group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">analytics</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Pattern Recognition</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container/50 border border-white/5 flex flex-col items-center text-center gap-2 group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">science</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Research</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container/50 border border-white/5 flex flex-col items-center text-center gap-2 group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">verified</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Quality Standards</span>
+</div>
+<div class="p-4 rounded-lg bg-surface-container/50 border border-white/5 flex flex-col items-center text-center gap-2 group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">handshake</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Team Collaboration</span>
+</div>
+</div>
+</div>
+<!-- Languages & Currently Learning -->
+<div class="md:col-span-1 lg:col-span-1 flex flex-col gap-6">
+<!-- Languages Spoken -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">language</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Languages</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-3 rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md">Telugu</span>
+<span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold uppercase">Native</span>
+</div>
+<div class="flex justify-between items-center p-3 rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md">English</span>
+<span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs font-bold uppercase">Fluent</span>
+</div>
+</div>
+</div>
+<!-- Currently Learning -->
+<div class="relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 opacity-50 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative glass-card p-8 rounded-xl flex flex-col gap-4 border-primary/30">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary animate-pulse text-3xl">auto_awesome</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">In Progress</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant"> Currently deep-diving into:</p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-surface-container rounded-md font-mono-label text-mono-label text-primary border border-primary/20">Cloud (GCP/AWS)</span>
+<span class="px-3 py-1 bg-surface-container rounded-md font-mono-label text-mono-label text-secondary border border-secondary/20">Docker</span>
+<span class="px-3 py-1 bg-surface-container rounded-md font-mono-label text-mono-label text-primary-container border border-primary-container/20">Advanced ML</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-white/5 py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-8">
+<div class="font-headline-md text-headline-md text-primary font-bold">DevPortfolio</div>
+<div class="text-on-surface-variant font-body-md text-body-md">
+                © 2024 DevPortfolio. Built with Precision.
+            </div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors cursor-pointer font-label-md text-label-md" href="https://github.com/sandysandy-9" target="_blank">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors cursor-pointer font-label-md text-label-md" href="https://linkedin.com/in/parisesandeep" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors cursor-pointer font-label-md text-label-md" href="mailto:parisesandeep27@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const level = bar.parentElement.parentElement.dataset.level || "0";
+                        bar.style.width = level + '%';
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            progressBars.forEach(bar => {
+                observer.observe(bar);
+            });
+        });
+    </script>
+</body></html>
